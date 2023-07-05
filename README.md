@@ -26,5 +26,6 @@ Development
 
 To start the development server and run the project locally, use the following command:
 
-npm run dev
+npm run dev /n
+
 This command will start the Vite development server and open the project in your default browser. Any changes you make to the code will be automatically reloaded in the browser.
