@@ -17,7 +17,7 @@ export const Result = ({ input }) => {
       related_keywords: "true",
     },
     headers: {
-      "X-RapidAPI-Key": "a28bb466f9msh316c5f8ba111db9p103d0fjsn91bc0bb45803",
+      "X-RapidAPI-Key": "d4d85b229emshbf0c40aad3d4160p122d17jsn90f319a1e721",
       "X-RapidAPI-Host": "google-web-search1.p.rapidapi.com",
     },
   };
@@ -63,6 +63,7 @@ export const Result = ({ input }) => {
   return (
     <>
       <div className="p-5 justify-between space-y-6">
+        <p className="text-2xl">Google Search Results:</p>
         {result?.results?.map(({ url, title, description }, index) => (
           <div key={index} className="w-full">
             <a href={url} target="_blank" rel="noopener noreferrer">

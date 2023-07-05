@@ -44,13 +44,13 @@ export const Answer = ({ input }) => {
 
   return (
     <div className="p-5 space-x-1 w-2/4 border-r">
-      <h2 className="pb-2 text-xl">Answer:</h2>
+      <h2 className="pb-2 text-2xl">Answer:</h2>
       {isLoading ? (
         <div className="flex justify-center pt-10">
           <BounceLoader color="#36d7b7" />
         </div>
       ) : (
-        <p>{answer}</p>
+        <p className="text-xl">{answer}</p>
       )}
     </div>
   );
