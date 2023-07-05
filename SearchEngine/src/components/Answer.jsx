@@ -6,6 +6,8 @@ export const Answer = ({ input }) => {
   // State for storing the answer and loading state
   const [answer, setAnswer] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  // const key = import.meta.env.VITE_OPENAI_API_KEY;
+  // console.log(key);
 
   useEffect(() => {
     // Function to fetch data from the API
@@ -22,8 +24,7 @@ export const Answer = ({ input }) => {
           {
             headers: {
               "Content-Type": "application/json",
-              Authorization:
-                "Bearer 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",
+              Authorization: import.meta.env.VITE_OPENAI_API_KEY,
             },
           }
         );

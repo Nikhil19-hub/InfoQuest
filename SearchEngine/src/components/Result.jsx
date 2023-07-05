@@ -17,7 +17,7 @@ export const Result = ({ input }) => {
       related_keywords: "true",
     },
     headers: {
-      "X-RapidAPI-Key": "d4d85b229emshbf0c40aad3d4160p122d17jsn90f319a1e721",
+      "X-RapidAPI-Key": import.meta.env.VITE_GOOGLE_API_KEY,
       "X-RapidAPI-Host": "google-web-search1.p.rapidapi.com",
     },
   };
