@@ -1,24 +1,30 @@
-import { useState } from 'react'
-import { Navbar } from './components/Navbar'
-import { Search } from './components/Search';
-import { Footer } from './components/footer';
-import axios from 'axios';
+import { useState } from "react";
+import { Navbar } from "./components/Navbar";
+import { Search } from "./components/Search";
+import { Footer } from "./components/footer";
 
 function App() {
-  const [dark, setDark] = useState(false)
-  
+  // State for dark mode
+  const [dark, setDark] = useState(false);
+
   return (
     <>
-      <div className={dark ? 'dark' : ''}>
-        <div className='dark:bg-gray-900 bg-gray-100 dark:text-gray-200 black min-h-screen'>
-          <Navbar dark={dark} setDark={setDark}/>
-          <h1 className="text-9xl m-40  font-bold text-center">Google</h1>
-          <Search/>
-          <Footer/>
+      {/* Root element */}
+      <div className={dark ? "dark" : ""}>
+        {/* Main content */}
+        <div className="dark:bg-gray-900 bg-gray-100 dark:text-gray-200 black min-h-screen">
+          {/* Navbar */}
+          <Navbar dark={dark} setDark={setDark} />
+
+          {/* Search component */}
+          <Search />
+
+          {/* Footer */}
+          <Footer />
         </div>
       </div>
     </>
-  )
+  );
 }
- 
-export default App
+
+export default App;
