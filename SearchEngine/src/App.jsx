@@ -12,7 +12,7 @@ function App() {
       {/* Root element */}
       <div className={dark ? "dark" : ""}>
         {/* Main content */}
-        <div className="dark:bg-gray-900 bg-gray-100 dark:text-gray-200 black min-h-screen">
+        <div className="dark:bg-gray-900 bg-gray-100 dark:text-gray-200  min-h-screen min-w-fit">
           {/* Navbar */}
           <Navbar dark={dark} setDark={setDark} />
 
